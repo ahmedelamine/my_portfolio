@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: logoFont;
+  src: url(./assets/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.right {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.center {
+  text-align: left;
+  padding: 2rem;
+}
+.center > * {
+  margin: 1rem;
+}
+
+.right h1 {
+  letter-spacing: 5px;
+}
+.right .h3 {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background-color: #ddd;
+  color: black;
+}
+
+.right p {
+  text-indent: 1rem;
+  margin: 2rem;
+  font-size: 1.2rem;
+  word-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left h1 {
+  font-family: logoFont;
+}
+
+.left {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.left img {
+  width: 50%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    height: auto;
+  }
+  .left {
+    width: 100%;
+    height: 100vh;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .center {
+    text-align: left;
+    padding: 1rem;
+  }
+}
